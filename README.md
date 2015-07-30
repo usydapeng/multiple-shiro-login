@@ -9,4 +9,9 @@ multiple shiro login
 > admin: AdminSecurityConfig.java  过滤/admin/**请求
 
 
-**因为/\*\*包含/admin/\*\*，所以需要优先过滤/admin/\*\*，代码实现就是先实例化AdminSecurityConfig.java(Order(100))，再实例化SecurityConfig.java(Order(200))**
+**因为/\*\*包含/admin/\*\*，所以需要优先过滤/admin/\*\*，代码实现就是先实例化AdminSecurityConfig.java，再实例化SecurityConfig.java**
+**可以通过Order注解实现**
+
+----
+
+通过设置不同的sessionId和cookie来分别记录portal或admin是否登录
