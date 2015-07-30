@@ -85,7 +85,7 @@ public class AdminSecurityConfig {
 		simpleCookie.setName("admin_ckb_re_a");
 		simpleCookie.setMaxAge(-1);
 		simpleCookie.setHttpOnly(true);
-		simpleCookie.setPath("/");
+		simpleCookie.setPath("/admin");
 		return simpleCookie;
 	}
 }
