@@ -9,4 +9,4 @@ multiple shiro login
 > admin: AdminSecurityConfig.java  过滤/admin/**请求
 
 
-**因为/**包含/admin/**，所以需要优先过滤/admin/**，代码实现就是先实例化AdminSecurityConfig.java(Order(100))，再实例化SecurityConfig.java(Order(200))**
+**因为/\*\*包含/admin/\*\*，所以需要优先过滤/admin/\*\*，代码实现就是先实例化AdminSecurityConfig.java(Order(100))，再实例化SecurityConfig.java(Order(200))**
