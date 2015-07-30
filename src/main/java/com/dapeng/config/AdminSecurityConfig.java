@@ -74,7 +74,7 @@ public class AdminSecurityConfig {
 	public SimpleCookie adminSimpleCookie(){
 		SimpleCookie simpleCookie = new SimpleCookie();
 		simpleCookie.setName("admin_zhangsan");
-		simpleCookie.setPath("/");
+		simpleCookie.setPath("/admin");
 		simpleCookie.setMaxAge(60 * 60 * 24 * 7);
 		return simpleCookie;
 	}
